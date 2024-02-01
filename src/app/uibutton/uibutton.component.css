@@ -1,0 +1,28 @@
+button {
+    border: 0px;
+    height: 35px;
+    width: 120px;
+    border-radius: 6px;
+}
+
+button[typeBt="default"] {
+    background-color: blue;
+    border: 0px;
+    color: white;
+    &:hover{
+        background-color: green;
+        transition: 400ms;
+    }
+}
+
+button[typeBt="outline"] {
+    background-color: transparent;
+    border: 2px solid blue;
+    color: blue;
+}
+
+button[typeBt="disabled"] {
+    background-color: grey;
+    border: 0px;
+    color: white;
+}

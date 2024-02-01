@@ -2,9 +2,11 @@
 
 <ul>
   <li *ngFor="let todo of todos">
-    {{ todo }}
+    {{ todo.action }}
 
-    <button>concluir</button>
-    <button>remover</button>
+    <idt-button></idt-button>
+    <idt-button typeBt="outline"></idt-button>
+    <idt-button typeBt="disabled"></idt-button>
+
   </li>
 </ul>
