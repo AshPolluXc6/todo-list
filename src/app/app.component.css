@@ -1,0 +1,29 @@
+.card {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 200px;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    box-shadow: -5px 5px 10.6px rgba(0, 0, 0, 0.25);;
+    border-radius: 8px;
+    border: 0.5px solid rgb(192, 192, 192);
+}
+
+
+span {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-top: 1px solid rgb(77, 77, 77);
+}
+
+img {
+    height: 50%;
+    margin-top: 10px;
+}
+

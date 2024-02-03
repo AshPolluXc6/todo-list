@@ -8,12 +8,12 @@ import { Todo } from './models/todo.models';
 })
 export class AppComponent {
   public todos: Todo[] = [];
-  public title: string = 'My tasks';
+  public title: string = 'Cart';
 
   constructor() {
-    this.todos.push(new Todo(1, 'Walk arround', false));
-    this.todos.push(new Todo(2, 'Go to market', false));
-    this.todos.push(new Todo(3, 'Buy new shirt', true));
-    this.todos.push(new Todo(4, 'Buy new desk', true));
+    this.todos.push(new Todo(0, 'Rice', false));
+    this.todos.push(new Todo(1, 'Beans', false));
+    this.todos.push(new Todo(2, 'Orange Juice', true));
+    this.todos.push(new Todo(3, 'Meat', true));
   }
 }

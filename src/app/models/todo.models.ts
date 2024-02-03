@@ -1,6 +1,6 @@
 export class Todo {
     constructor (
-        public id: number,
+        public stock: number,
         public action: string,
         public done: boolean,
     ) {}

@@ -9,7 +9,6 @@ export class UibuttonComponent {
 
   @Input() typeBt: 'default' | 'outline' | 'disabled' = 'default'
  
-  @Input() text: string = 'teste';
-
+  @Input() text: string = 'Buy';
 
 }
