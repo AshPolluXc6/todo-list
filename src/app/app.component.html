@@ -1,6 +1,27 @@
 <h1>{{ title }}</h1>
 
-<ul>
+
+
+
+<div *ngFor="let todo of todos">
+  <idt-product-card typeCard="promotion" 
+    *ngIf="todo.stock === 0 Else otherCard"
+    >
+    
+      <p>{{ todo.action }}</p>
+  </idt-product-card>
+    
+  <ng-template #otherCard>
+    <idt-product-card>
+      <p>{{ todo.action }}</p>
+    </idt-product-card>
+   </ng-template>
+</div>
+
+
+
+
+ <!-- <ul>
   <li class="card" *ngFor="let todo of todos">
     <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRzJrxjrSnHuBfNS7CGmbYyFYL2y3EEUdWJpbgm4XGszXnlMpHV--Xs8paKu682WBABtL6ggOuk4p7UfDwGc9FxbU3o9ODKb4XQnPrr5L0wgp1p8kDy1zxWKg&usqp=CAE" alt="">
 
@@ -14,4 +35,4 @@
       </ng-template>
   </span>
   </li>
-</ul>
+</ul>  -->

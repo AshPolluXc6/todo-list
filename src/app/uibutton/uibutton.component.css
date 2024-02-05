@@ -1,11 +1,10 @@
-button {
+
+
+button[typeBt="default"] {
     border: 0px;
     height: 35px;
     width: 120px;
     border-radius: 6px;
-}
-
-button[typeBt="default"] {
     background-color: #0476A8;
     border: 0px;
     color: white;
