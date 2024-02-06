@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, input } from '@angular/core';
 
 @Component({
   selector: 'idt-product-card',
@@ -8,5 +8,4 @@ import { Component, Input, OnInit } from '@angular/core';
 export class ProductCardComponent { 
 
   @Input() typeCard: 'default' | 'promotion'  = 'default';
-
 }

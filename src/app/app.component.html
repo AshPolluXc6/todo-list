@@ -5,17 +5,17 @@
 
 <div *ngFor="let todo of todos">
   <idt-product-card typeCard="promotion" 
-    *ngIf="todo.stock === 0 Else otherCard"
-    >
-    
-      <p>{{ todo.action }}</p>
+  *ngIf="todo.promo === 1 Else otherCard"
+  >
+      <p>TESTE</p>
+
   </idt-product-card>
     
   <ng-template #otherCard>
     <idt-product-card>
-      <p>{{ todo.action }}</p>
+      <p>TESTE</p>
     </idt-product-card>
-   </ng-template>
+  </ng-template>
 </div>
 
 
